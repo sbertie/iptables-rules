@@ -20,7 +20,7 @@ if [ "save" == $action ]; then
   echo $file is $count lines.
 fi
 
-if [ "save" == $action ]; then
+if [ "restore" == $action ]; then
   if iptables-restore < $file; then
     echo $file has been restored
   fi
