@@ -17,11 +17,11 @@ fi
 if [ "save" == $action ]; then
   iptables-save > $file
   count=$(grep -c . $file)
-  echo $file is $count lines.
+  echo wrote $count lines to $file.
 fi
 
 if [ "restore" == $action ]; then
   if iptables-restore < $file; then
-    echo $file has been restored
+    echo restored iptables rules from $file
   fi
 fi
