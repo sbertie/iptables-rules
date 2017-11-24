@@ -10,3 +10,5 @@ mod 'iptables',
 Using with puppet task:
 
 puppet task run iptables::rules action=save file=test --node servername
+
+puppet task run iptables::rules action=restore file=test --node servername
