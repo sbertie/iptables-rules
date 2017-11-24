@@ -1,0 +1,15 @@
+{
+  "description": "Puppet task for saving and restoring iptables rules",
+  "supports_noop": false,
+  "input_method": "environment",
+  "parameters": {
+    "action": {
+      "description": "save/restore",
+      "type": "String[1]"
+    },
+    "file": {
+      "description": "filename",
+      "type": "String[1]"
+    }
+  }
+}
